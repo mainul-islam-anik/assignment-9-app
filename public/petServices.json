@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": "Price: 25 $",
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.ibb.co.com/677s4kCD/download-1.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": "Price: 30 $",
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co.com/Y76dcWbX/download-8.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Indoor Winter Agility Training",
+    "providerName": "Frosty Paws Academy",
+    "providerEmail": "train@frostypaws.com",
+    "price": "Price: 45 $",
+    "rating": 4.7,
+    "slotsAvailable": 10,
+    "description": "Keep your pet active during freezing temperatures with our heated indoor agility course.",
+    "image": "https://i.ibb.co.com/bjQRXV37/download-9.jpg",
+    "category": "Training"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Cold Weather Wellness Check",
+    "providerName": "Arctic Vet Clinic",
+    "providerEmail": "care@arcticvet.com",
+    "price": "Price: 60 $",
+    "rating": 5.0,
+    "slotsAvailable": 2,
+    "description": "Comprehensive health exam focusing on joint health and respiratory wellness during winter.",
+    "image": "https://i.ibb.co.com/1JtHdjy2/download-10.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Heated Bed & Boarding",
+    "providerName": "Snuggle Stay Inn",
+    "providerEmail": "stay@snugglestay.com",
+    "price": "Price: 75 $",
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Premium boarding featuring orthopedic heated beds and climate-controlled suites.",
+    "image": "https://i.ibb.co.com/Fkx6vpWB/download-11.jpg",
+    "category": "Boarding"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Anti-Ice Paw Waxing",
+    "providerName": "Pawsitive Protection",
+    "providerEmail": "guard@pawsitive.com",
+    "price": "Price: 15 $",
+    "rating": 4.9,
+    "slotsAvailable": 12,
+    "description": "Application of food-grade wax to protect paws from salt, ice, and chemical de-icers.",
+    "image": "https://i.ibb.co.com/pNsjT1s/download-12.jpg",
+    "category": "Maintenance"
+  }
+]
