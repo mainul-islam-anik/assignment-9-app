@@ -5,9 +5,10 @@ import Home from '../Pages/Home/Home';
 import Services from '../Pages/Services/Services';
 import MyProfile from '../Pages/MyProfile/MyProfile';
 import Error from '../Pages/Error/Error';
-// import AppDetails from '../Pages/AppDetails/AppDetails';
-// import AllApps from '../Pages/AllApps/AllApps';
-// import Installation from '../Pages/Installation/Installation';
+import Details from '../Pages/Details/Details';
+import Login from '../Pages/Login/Login';
+import Register from '../Pages/Register/Register';
+import AuthLayout from '../Pages/AuthLayout.jsx/AuthLayout';
 
 
 export const router = createBrowserRouter([
@@ -28,12 +29,11 @@ export const router = createBrowserRouter([
           
           Component: Services
         },
-        // {
-        //   path: '/appDetails/:id',
-        //   loader: ()=>fetch('/allAppsData.json'),
-        //   errorElement: <ErrorApp></ErrorApp>,
-        //   Component: AppDetails
-        // },
+        {
+          path: '/details/:id',
+          loader: ()=>fetch('/petServices.json'),
+          Component: Details
+        },
         {
           path: '/myProfile',
         //   loader: ()=>fetch('/allAppsData.json'),
@@ -41,4 +41,18 @@ export const router = createBrowserRouter([
         }
     ]
   },
+  {
+    path: "/auth",
+    Component: AuthLayout,
+    children: [
+        {
+            path: "/auth/login",
+            Component: Login
+        },
+        {
+            path: "/auth/register",
+            Component: Register
+        }
+    ]
+  }
 ]);
