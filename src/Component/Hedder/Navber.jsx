@@ -49,12 +49,8 @@ const Navber = () => {
     </nav>
   </div>
   <div className="navbar-end flex gap-5">
-      {user? 
-    <div className=''>{user && user.email}</div>
-      :
-    <img  src={userIcon} alt="" />
-    }
-    {console.log(user)}
+      {user?<div className=''>{user && user.email}</div>: ""}
+    <img className='w-12 rounded-full'  src={`${user ? user.photoURL : userIcon}`} alt="" />
     {user ? <button onClick={handleLogOut}  className='btn btn-neutral px-10'>LogOut</button> : <Link to="/auth/login" className="btn btn-neutral px-10">Login</Link>}
     
   </div>

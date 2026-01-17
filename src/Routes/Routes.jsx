@@ -10,6 +10,7 @@ import Login from '../Pages/Login/Login';
 import Register from '../Pages/Register/Register';
 import AuthLayout from '../Pages/AuthLayout.jsx/AuthLayout';
 import PrivateRoute from '../Pages/PrivateRoute/PrivateRoute';
+import Loading from '../Pages/Loading';
 
 
 export const router = createBrowserRouter([
@@ -19,23 +20,26 @@ export const router = createBrowserRouter([
     errorElement: <Error></Error>,
     children:[
         {
-            index: true,
-            loader: ()=>fetch('/petServices.json'),
-            path: "/",
-            Component: Home
+          index: true,
+          path: "/",
+          Component: Home,
+          loader: ()=>fetch('/petServices.json'),
+          hydrateFallbackElement: <Loading></Loading>,
         },
         {
           path: '/services',
+          Component: Services,
           loader: ()=>fetch('/petServices.json'),
-          
-          Component: Services
+          hydrateFallbackElement: <Loading></Loading>
         },
         {
           path: '/details/:id',
-          loader: ()=>fetch('/petServices.json'),
-          element: <PrivateRoute>
+          element: (<PrivateRoute>
             <Details></Details>
           </PrivateRoute>
+          ),
+          loader: ()=>fetch('/petServices.json'),
+          hydrateFallbackElement: <Loading></Loading>
         },
         {
           path: '/myProfile',
